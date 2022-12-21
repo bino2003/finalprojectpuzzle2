@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color3"
+    tools:context=".TruOrFalse">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/et_question"
+        android:layout_width="339dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_login"
+        android:ems="10"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="10dp">
+
+        <RadioButton
+            android:id="@+id/True"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_login"
+            android:text="True"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/False"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/et_login"
+            android:text="False"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">finalprojectpuzzle</string>
+
+    <string-array name="country">
+        <item>palestine</item>
+        <item>jordan</item>
+        <item>algeria</item>
+        <item>morocco</item>
+        <item>tunisia</item>
+    </string-array>
+    <string name="et_username">enter the user name</string>
+    <string name="et_password">enter the password</string>
+    <string name="btn_login">login</string>
+    <string name="btn_register">register</string>
+    <string name="et_firstname2">enter the first name</string>
+    <string name="et_birthdate2">enter your birthdate</string>
+    <string name="et_repass2">enter repassword</string>
+    <string name="et_email2">enter your email</string>
+    <string name="et_uname2">enter username</string>
+    <string name="et_pass2">enter password</string>
+    <string name="rb_male">male</string>
+    <string name="rb_female">female</string>
+    <string name="btn_save2">save</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
