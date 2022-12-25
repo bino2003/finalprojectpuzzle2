@@ -79,7 +79,7 @@ public class PlayingStart extends AppCompatActivity {
 
                 JSONArray questionsJsonArray=PlayingJsonObject.getJSONArray("questions");
                 ArrayList questionsArrayList=new ArrayList();
-                Log.d(" questions", String.valueOf(questionsJsonArray.length()));
+                Log.d(" questions123", String.valueOf(questionsJsonArray.length()));
                 for (int x = 0; x < questionsJsonArray.length(); x++) {
                     JSONObject questionsJsonObject=new JSONObject(questionsJsonArray.get(x).toString());
                     int id=   questionsJsonObject.getInt("id");
