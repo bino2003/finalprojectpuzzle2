@@ -20,9 +20,8 @@ ActivityLevelBinding binding;
 
         ArrayList<Fragment> fragmentMathArrayList=new ArrayList<>();
 
-       if ()
-            TruOrFalse truOrFalse=  TruOrFalse.newInstance();
-            fragmentMathArrayList.add(fragmentMath);
+
+
 
 
 

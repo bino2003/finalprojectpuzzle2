@@ -7,11 +7,14 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(
-        foreignKeys = @ForeignKey(
+        foreignKeys =
+        @ForeignKey(
                 entity = Level.class,
                 parentColumns = "Level1",
                 childColumns = "num_level",
-                onDelete = CASCADE))
+                onDelete = CASCADE)
+
+)
 public class Puzzle {
     @PrimaryKey
     int num;
