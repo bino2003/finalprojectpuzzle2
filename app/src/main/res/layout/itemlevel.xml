@@ -4,17 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
     android:background="@color/color2">
 
     <LinearLayout
         android:id="@+id/linearlayout_numplayerpoint"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/et_login"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/linearlayout_nimallpoint"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout_nimallpoint">
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout_level"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout_num_q">
+
+        <TextView
+            android:id="@+id/hint_num_playerpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="عدد نقاطك:"
+            android:textColor="@color/color4"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/num_yourpoint"
@@ -23,16 +37,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="7dp"
             android:text="10"
+            android:textColor="@color/color4"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/hint_num_playerpoint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="عدد نقاطك:"
-            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -40,20 +47,13 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/et_login"
+        android:layout_marginEnd="10dp"
 
+        android:background="@drawable/et_login"
         android:orientation="horizontal"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout_level"
         app:layout_constraintTop_toBottomOf="@id/linearlayout_num_q">
-
-        <TextView
-            android:id="@+id/num_allpoint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:text="10"
-            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/hint_num_allpoint"
@@ -61,35 +61,47 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="عدد النقاط اللازمة:"
+            android:textColor="@color/color4"
             android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/num_allpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="10"
+            android:textColor="@color/color4"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout_level"
         android:layout_width="119dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/et_login"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/numLevel"
+            android:id="@+id/level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="1"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/level"
-            android:layout_width="88dp"
-            android:layout_height="52dp"
+            android:gravity="center"
             android:text="المستوى:"
             android:textColor="@color/color4"
             android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/numLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/color4"
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -97,28 +109,31 @@
         android:id="@+id/linearlayout_num_q"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/et_login"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/linearlayout_nimallpoint"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout_level"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/hint_num_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="عدد الاسئلة:"
+            android:textColor="@color/color4"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/num_q"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:layout_marginTop="7dp"
-            android:text="10"
+            android:text="4"
+            android:textColor="@color/color4"
             android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/hint_num_q"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="عدد الاسئلة:"
-            android:textSize="25sp" />
 
     </LinearLayout>
 
@@ -126,9 +141,10 @@
         android:id="@+id/imageView2"
         android:layout_width="67dp"
         android:layout_height="61dp"
-        android:layout_marginEnd="336dp"
+        android:layout_marginEnd="344dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
         app:srcCompat="@drawable/closed" />
 </androidx.constraintlayout.widget.ConstraintLayout>

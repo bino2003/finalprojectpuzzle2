@@ -4,8 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color2"
     tools:context=".LevelActivity">
-<androidx.viewpager2.widget.ViewPager2
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></androidx.viewpager2.widget.ViewPager2>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="407dp"
+        android:layout_height="535dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/color2"
+        app:layout_constraintBottom_toTopOf="@+id/skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <TextView
+        android:id="@+id/levelnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/puzzleshape"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/puzzleshape"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/levelnum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num_allquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/puzzleshape"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/player_point"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/puzzleshape"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/player_point"
+        app:layout_constraintTop_toBottomOf="@+id/num_allquestion" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/puzzleshape"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/num_question"
+        app:layout_constraintEnd_toStartOf="@+id/levelnum"
+        app:layout_constraintTop_toBottomOf="@+id/player_point"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color4"
+        android:text="skip"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

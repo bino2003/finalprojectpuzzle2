@@ -8,26 +8,39 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.finalprojectpuzzle.databinding.FragmentChooseBinding;
+import com.example.finalprojectpuzzle.databinding.FragmentTruOrFalseBinding;
+
 
 public class Choose extends Fragment {
 
 
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_First_option = "param1";
+    private static final String ARG_Option_Two = "param2";
+    private static final String ARG_Option_Three = "param2";
+    private static final String ARG_Fourth_option = "param2";
+    private static final String ARG_questions = "param2";
 
-    private String mParam1;
-    private String mParam2;
+
+    private String Question;
+    private String First_option;
+    private String Option_Two;
+    private String Option_Three;
+    private String Fourth_option ;
 
     public Choose() {
         // Required empty public constructor
     }
 
 
-    public static Choose newInstance(String param1, String param2) {
+    public static Choose newInstance(String Question, String First_option,String Option_Two,String Option_Three,String Fourth_option) {
         Choose fragment = new Choose();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString(ARG_First_option, First_option);
+        args.putString(ARG_Option_Three, Option_Three);
+        args.putString(ARG_questions, Question);
+        args.putString(ARG_Option_Two, Option_Two);
+        args.putString(ARG_Fourth_option, Fourth_option);
         fragment.setArguments(args);
         return fragment;
     }
@@ -36,15 +49,28 @@ public class Choose extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            Question = getArguments().getString(ARG_questions);
+            First_option = getArguments().getString(ARG_First_option);
+            Option_Three = getArguments().getString(ARG_Option_Three);
+            Option_Two = getArguments().getString(ARG_Option_Two);
+
+            Fourth_option = getArguments().getString(ARG_Fourth_option);
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_choose, container, false);
+        View v=inflater.inflate(R.layout.fragment_choose, container, false);
+        FragmentChooseBinding binding=FragmentChooseBinding.inflate(getLayoutInflater());
+        binding.etQuestion.setText(Question);
+        binding.FirstOption.setText(First_option);
+        binding.FourthOption.setText(Fourth_option);
+        binding.OptionThree.setText(Option_Three);
+        binding.OptionTwo.setText(Option_Two);
+
+
+
+        return v;
     }
 }

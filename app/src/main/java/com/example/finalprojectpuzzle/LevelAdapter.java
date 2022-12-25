@@ -17,10 +17,12 @@ import java.util.ArrayList;
 public class LevelAdapter extends RecyclerView.Adapter<LevelViewHolder> {
     ArrayList<Level> levelArrayList;
     Context context;
+OnClickItem onClickItem;
 
-    public LevelAdapter(ArrayList<Level> levelArrayList, Context context) {
+    public LevelAdapter(ArrayList<Level> levelArrayList, Context context, OnClickItem onClickItem) {
         this.levelArrayList = levelArrayList;
         this.context = context;
+        this.onClickItem = onClickItem;
     }
 
     @NonNull
@@ -32,16 +34,17 @@ public class LevelAdapter extends RecyclerView.Adapter<LevelViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull LevelViewHolder holder, int position) {
-holder.Level.setText(levelArrayList.get(position).getLevel1());
+        int pos= position;
+        holder.Level.setText(String.valueOf(levelArrayList.get(position).getLevel1()));
+holder.itemView.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+onClickItem.onclick(levelArrayList.get(pos).getLevel1());
+    }
+});
 
-
-        holder.Num_allPoint.setText(levelArrayList.get(position).getUnlock_points());
-        holder.closed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        holder.Num_allPoint.setText(String.valueOf(levelArrayList.get(position).getUnlock_points()));
+        holder.closed.setImageResource(R.drawable.closed);
     }
 
     @Override
@@ -50,18 +53,18 @@ holder.Level.setText(levelArrayList.get(position).getLevel1());
     }
 }
 class LevelViewHolder extends RecyclerView.ViewHolder{
-TextView Level;
-TextView Num_q;
-TextView Num_allPoint;
-TextView Num_PlayerPoint;
-ImageView closed;
+    TextView Level;
+
+    TextView Num_allPoint;
+
+    ImageView closed;
     public LevelViewHolder(@NonNull ItemlevelBinding binding) {
 
         super(binding.getRoot());
         closed=binding.imageView2;
         Num_allPoint=binding.numAllpoint;
-        Num_PlayerPoint=binding.numYourpoint;
-        Num_q=binding.numQ;
-        Level=binding.level;
+
+
+        Level=binding.numLevel;
     }
 }

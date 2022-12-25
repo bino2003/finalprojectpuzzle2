@@ -10,18 +10,20 @@ import com.example.finalprojectpuzzle.databinding.ActivitySplashBinding;
 import com.example.finalprojectpuzzle.databinding.ActivitySplashBinding;
 
 public class SplashActivity extends AppCompatActivity {
-Handler h=new Handler();
+    Handler h=new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        Intent intent=new Intent(SplashActivity.this,playerService.class);
+        startService(intent);
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-Intent intent=new Intent(SplashActivity.this,HomeActivity.class);
-startActivity(intent);
-finish();
+                Intent intent=new Intent(SplashActivity.this,HomeActivity.class);
+                startActivity(intent);
+                finish();
             }
-        },5000);
+        },2000);
     }
 }
