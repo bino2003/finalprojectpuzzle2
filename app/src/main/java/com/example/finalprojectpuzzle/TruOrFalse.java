@@ -15,19 +15,21 @@ public class TruOrFalse extends Fragment {
 
 
 
-    private static final String ARG_Questions = "q";
+    private static final String ARG_Questions = "Questions";
+    private static final String ARG_true_Answer = "true_Answer";
 
     private String questions;
-
+private String true_Answer;
     public TruOrFalse() {
         // Required empty public constructor
     }
 
 
-    public static TruOrFalse newInstance(String questions ) {
+    public static TruOrFalse newInstance(String questions,String true_Answer ) {
         TruOrFalse fragment = new TruOrFalse();
         Bundle args = new Bundle();
         args.putString(ARG_Questions, questions);
+        args.putString(ARG_true_Answer, true_Answer);
 
         fragment.setArguments(args);
         return fragment;
@@ -38,6 +40,7 @@ public class TruOrFalse extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             questions = getArguments().getString(ARG_Questions);
+            true_Answer = getArguments().getString(ARG_true_Answer);
         }
     }
 

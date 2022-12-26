@@ -30,6 +30,20 @@ public class Puzzle {
     String pattern;
     String hint;
 
+    public Puzzle(String label, String answer1, String answer2, String answer3, String answer4, String right_answer, int point, int num_level, int time, String pattern, String hint) {
+        this.label = label;
+        this.answer1 = answer1;
+        this.answer2 = answer2;
+        this.answer3 = answer3;
+        this.answer4 = answer4;
+        this.right_answer = right_answer;
+        this.point = point;
+        this.num_level = num_level;
+        this.time = time;
+        this.pattern = pattern;
+        this.hint = hint;
+    }
+
     public int getNum() {
         return num;
     }

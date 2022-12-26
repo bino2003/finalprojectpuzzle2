@@ -11,12 +11,12 @@ import androidx.room.Update;
 import java.util.List;
 @Dao
 public interface LevelDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict=OnConflictStrategy.REPLACE)
     void insertLevel(Level level);
     @Delete
     void deleteLevel(Level level);
     @Update
     void updateLevel(Level level);
-    @Query("select * from Level ")
+    @Query("select * from Level")
     LiveData<List<Level>> getAllLevel();
 }
