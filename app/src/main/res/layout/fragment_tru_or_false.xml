@@ -7,8 +7,6 @@
     android:background="@color/color3"
     tools:context=".TruOrFalse">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <EditText
         android:id="@+id/et_question"
         android:layout_width="339dp"
@@ -17,15 +15,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="48dp"
         android:background="@drawable/et_login"
-        android:ems="10"
         android:gravity="center"
-        android:minHeight="48dp"
-        android:text=""
+        android:text="dkjbfdskfjbdskjfb"
         android:textColor="@color/color4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+         />
 
     <RadioGroup
         android:layout_width="match_parent"

@@ -48,12 +48,9 @@ private String true_Answer;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.fragment_tru_or_false, container, false);
-       FragmentTruOrFalseBinding binding=FragmentTruOrFalseBinding.inflate(inflater,container,false);
+       FragmentTruOrFalseBinding binding = FragmentTruOrFalseBinding.inflate(inflater,container,false);
         binding.etQuestion.setText(questions);
         Log.d("pagerTest", "onCreateView: "+questions);
-
-
-        return v;
+        return binding.getRoot();
     }
 }
