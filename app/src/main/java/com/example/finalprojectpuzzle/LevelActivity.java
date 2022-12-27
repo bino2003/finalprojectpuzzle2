@@ -47,6 +47,7 @@ myViewModel.getAllPuzzle().observe(this, new Observer<List<Puzzle>>() {
                 Fill_in_the_blank fill_in_the_blank=  Fill_in_the_blank.newInstance(puzzles.get(i).label,puzzles.get(i).right_answer);
                 fragmentPuzzleArrayList.add(fill_in_the_blank);
 
+
             }
 }}});
         PuzzleAdapter puzzleAdapter=new PuzzleAdapter(this,fragmentPuzzleArrayList);

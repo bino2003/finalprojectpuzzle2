@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,8 +49,9 @@ private String true_Answer;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.fragment_tru_or_false, container, false);
-       FragmentTruOrFalseBinding binding=FragmentTruOrFalseBinding.inflate(getLayoutInflater());
+       FragmentTruOrFalseBinding binding=FragmentTruOrFalseBinding.inflate(inflater,container,false);
         binding.etQuestion.setText(questions);
+        Log.d("pagerTest", "onCreateView: "+questions);
 
 
         return v;
