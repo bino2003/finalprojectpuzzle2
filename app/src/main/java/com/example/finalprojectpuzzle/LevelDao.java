@@ -11,7 +11,7 @@ import androidx.room.Update;
 import java.util.List;
 @Dao
 public interface LevelDao {
-    @Insert(onConflict=OnConflictStrategy.REPLACE)
+    @Insert(onConflict=OnConflictStrategy.IGNORE)
     void insertLevel(Level level);
     @Delete
     void deleteLevel(Level level);

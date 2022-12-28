@@ -47,12 +47,11 @@ public class Fill_in_the_blank extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.fragment_fill_in_the_blank, container, false);
         FragmentFillInTheBlankBinding binding=FragmentFillInTheBlankBinding.inflate(getLayoutInflater());
         binding.etQuestion.setText(questions);
 
 
 
-        return v;
+        return binding.getRoot();
     }
 }

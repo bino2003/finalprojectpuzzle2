@@ -17,15 +17,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="48dp"
         android:background="@drawable/et_login"
-        android:ems="10"
         android:gravity="center"
-        android:minHeight="48dp"
         android:text=""
         android:textColor="@color/color4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:layout_width="match_parent"

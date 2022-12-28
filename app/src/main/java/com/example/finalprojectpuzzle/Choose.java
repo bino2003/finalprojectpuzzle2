@@ -65,7 +65,6 @@ public class Choose extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.fragment_choose, container, false);
         FragmentChooseBinding binding=FragmentChooseBinding.inflate(getLayoutInflater());
         binding.etQuestion.setText(Question);
         binding.FirstOption.setText(First_option);
@@ -76,6 +75,6 @@ public class Choose extends Fragment {
 
 
 
-        return v;
+        return binding.getRoot();
     }
 }

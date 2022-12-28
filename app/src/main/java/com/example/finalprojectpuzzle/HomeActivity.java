@@ -15,6 +15,14 @@ ActivityHomeBinding binding;
         super.onCreate(savedInstanceState);
         binding=ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomeActivity.this,SettingsActivity.class);
+                startActivity(intent);
+
+            }
+        });
 binding.btnStart.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {

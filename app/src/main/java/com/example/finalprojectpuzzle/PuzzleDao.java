@@ -12,12 +12,12 @@ import java.util.List;
 
 @Dao
 public interface PuzzleDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertPuzzle(Puzzle puzzle);
     @Delete
     void DeletePuzzle(Puzzle puzzle);
     @Update
     void UpdatePuzzle(Puzzle puzzle);
-    @Query("select * from Puzzle inner join Level on Puzzle.num_level = Level.Level1 ")
+    @Query("select * from Puzzle  ")
     LiveData<List<Puzzle>> getAllPuzzle();
 }

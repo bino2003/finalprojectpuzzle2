@@ -12,7 +12,7 @@ import java.util.List;
 
 @Dao
 public interface PatternsDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertPattern(Patterns patterns);
     @Delete
     void DeletePattern(Patterns patterns);

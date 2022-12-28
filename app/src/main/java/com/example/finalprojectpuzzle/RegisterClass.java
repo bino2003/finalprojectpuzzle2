@@ -22,9 +22,8 @@ ActivityRegisterClassBinding binding;
             public void onClick(View view) {
                 binding.etBirthdate2.getText().toString();
                 binding.etEmail2.getText().toString();
-                binding.etFirstname2.getText().toString();
                 binding.etUname2.getText().toString();
-                binding.etPass2.getText().toString();
+
             }
         });
     }

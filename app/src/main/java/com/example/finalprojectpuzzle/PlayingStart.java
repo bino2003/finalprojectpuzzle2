@@ -97,8 +97,7 @@ public class PlayingStart extends AppCompatActivity {
                     String hint =questionsJsonObject.getString("hint");
                     Patterns patterns=new Patterns(pattern_name1,pattern_id);
                     myViewModel.insertPattern(patterns);
-                    Puzzle puzzle=new Puzzle(id,title,answer_1,answer_2,answer_3,answer_4,true_answer,points,level_num,duration,String.valueOf(pattern_id),hint);
-
+         Puzzle puzzle=new Puzzle(id,title,answer_1,answer_2,answer_3,answer_4,true_answer,points,level_num,duration,pattern_id,hint);
                     myViewModel.insertPuzzle(puzzle);
                 }
 

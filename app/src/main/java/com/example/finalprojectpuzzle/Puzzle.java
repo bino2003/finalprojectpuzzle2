@@ -7,17 +7,26 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(
-        foreignKeys =
-        @ForeignKey(
-                entity = Level.class,
-                parentColumns = "Level1",
-                childColumns = "num_level",
+        foreignKeys ={
+                @ForeignKey(
+                        entity = Level.class,
+                        parentColumns = "Level1",
+                        childColumns = "num_level",
+                        onDelete = CASCADE),@ForeignKey(
+                entity = Patterns.class,
+                parentColumns = "number",
+                childColumns = "pattern",
                 onDelete = CASCADE)
+
+
+        }
+
 
 )
 public class Puzzle {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     int num;
+    int puzzle_num;
     String label;
     String answer1;
     String answer2;
@@ -27,21 +36,17 @@ public class Puzzle {
     int point;
     int num_level;
     int time;
-    String pattern;
+    int pattern;
     String hint;
 
-    public Puzzle(String label, String answer1, String answer2, String answer3, String answer4, String right_answer, int point, int num_level, int time, String pattern, String hint) {
-        this.label = label;
-        this.answer1 = answer1;
-        this.answer2 = answer2;
-        this.answer3 = answer3;
-        this.answer4 = answer4;
-        this.right_answer = right_answer;
-        this.point = point;
-        this.num_level = num_level;
-        this.time = time;
-        this.pattern = pattern;
-        this.hint = hint;
+
+
+    public int getPuzzle_num() {
+        return puzzle_num;
+    }
+
+    public void setPuzzle_num(int puzzle_num) {
+        this.puzzle_num = puzzle_num;
     }
 
     public int getNum() {
@@ -124,11 +129,11 @@ public class Puzzle {
         this.time = time;
     }
 
-    public String getPattern() {
+    public int getPattern() {
         return pattern;
     }
 
-    public void setPattern(String pattern) {
+    public void setPattern(int pattern) {
         this.pattern = pattern;
     }
 
@@ -144,8 +149,9 @@ public class Puzzle {
 
     }
 
-    public Puzzle(int num, String label, String answer1, String answer2, String answer3, String answer4, String right_answer, int point, int num_level, int time, String pattern, String hint) {
-        this.num = num;
+    public Puzzle(int puzzle_num, String label, String answer1, String answer2, String answer3, String answer4,
+                  String right_answer, int point, int num_level, int time, int pattern, String hint) {
+        this.puzzle_num = puzzle_num;
         this.label = label;
         this.answer1 = answer1;
         this.answer2 = answer2;
