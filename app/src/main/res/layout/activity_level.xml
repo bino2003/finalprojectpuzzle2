@@ -9,8 +9,8 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
-        android:layout_width="408dp"
-        android:layout_height="465dp"
+        android:layout_width="404dp"
+        android:layout_height="538dp"
         android:layout_marginBottom="12dp"
         android:background="@color/color4"
         app:layout_constraintBottom_toTopOf="@+id/skip"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/puzzleshape"
         android:gravity="center"
         android:text="TextView"
@@ -37,12 +37,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/puzzleshape"
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/levelnum"
+        app:layout_constraintEnd_toStartOf="@+id/timer"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/puzzleshape"
         android:gravity="center"
         android:text="TextView"
@@ -59,29 +59,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/num_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/puzzleshape"
-        android:gravity="center"
-        android:text="TextView"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/player_point"
-        app:layout_constraintTop_toBottomOf="@+id/num_allquestion" />
-
-    <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/puzzleshape"
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/num_question"
         app:layout_constraintEnd_toStartOf="@+id/levelnum"
-        app:layout_constraintTop_toBottomOf="@+id/player_point"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/skip"

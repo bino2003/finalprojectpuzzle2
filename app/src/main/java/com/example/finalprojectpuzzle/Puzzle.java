@@ -149,9 +149,8 @@ public class Puzzle {
 
     }
 
-    public Puzzle(int puzzle_num, String label, String answer1, String answer2, String answer3, String answer4,
-                  String right_answer, int point, int num_level, int time, int pattern, String hint) {
-        this.puzzle_num = puzzle_num;
+    public Puzzle(int num, String label, String answer1, String answer2, String answer3, String answer4, String right_answer, int point, int num_level, int time, int pattern, String hint) {
+        this.num = num;
         this.label = label;
         this.answer1 = answer1;
         this.answer2 = answer2;

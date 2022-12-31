@@ -17,6 +17,9 @@
             android:name=".playerService"
             android:enabled="true"
             android:exported="true"></service>
+        <service
+            android:name=".myJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
 
         <activity
             android:name=".SettingsActivity"
@@ -31,7 +34,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterClass"
+            android:name=".ProfileClass"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
     public class Level {
-        @PrimaryKey(autoGenerate = true)
+        @PrimaryKey
         private int Level1;
         private      int  unlock_points;
 
