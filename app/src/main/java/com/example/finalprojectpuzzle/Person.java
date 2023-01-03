@@ -29,6 +29,7 @@ import androidx.room.PrimaryKey;
 
         private String Gender;
 
+
         public Person() {
 
         }
@@ -83,6 +84,14 @@ import androidx.room.PrimaryKey;
         }
 
         public void setGender(@NonNull String gender) {
+            Gender = gender;
+        }
+
+        public Person(@NonNull String fullName, @NonNull String email, @NonNull String nationality, @NonNull String dateOfBirth, @NonNull String gender) {
+            FullName = fullName;
+            Email = email;
+            Nationality = nationality;
+            DateOfBirth = dateOfBirth;
             Gender = gender;
         }
 

@@ -26,6 +26,8 @@ public class playerService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        mediaPlayer.stop();
+        mediaPlayer.release();
     }
 
 

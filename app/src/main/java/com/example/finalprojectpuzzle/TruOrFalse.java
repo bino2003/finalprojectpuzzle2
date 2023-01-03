@@ -90,6 +90,7 @@ public class TruOrFalse extends Fragment {
                             mediaPlayer1.start();
                             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
                             dialog.show(getParentFragmentManager(),"CustomDialog");
+                            onAnswer.OnAnswerWrong();
                         }
 
                         break;
@@ -105,6 +106,7 @@ public class TruOrFalse extends Fragment {
 mediaPlayer1.start();
                             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
                             dialog.show(getParentFragmentManager(),"CustomDialog");
+                            onAnswer.OnAnswerWrong();
                         }
                         break;
                 }

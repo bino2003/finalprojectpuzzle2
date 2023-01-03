@@ -8,7 +8,7 @@
     tools:context=".SettingsActivity">
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/music"
         android:layout_width="363dp"
         android:layout_height="58dp"
         android:layout_marginTop="240dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/Notifications"
         android:layout_width="363dp"
         android:layout_height="58dp"
         android:layout_marginTop="44dp"
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/music" />
 
     <Button
         android:id="@+id/Replay"
@@ -47,5 +47,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+        app:layout_constraintTop_toBottomOf="@+id/Notifications" />
 </androidx.constraintlayout.widget.ConstraintLayout>

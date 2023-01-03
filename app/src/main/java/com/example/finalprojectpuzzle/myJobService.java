@@ -32,8 +32,8 @@ stop=true;
             jobFinished(jobParameters,false);
             return;
         }
-        Intent intent=new Intent(getBaseContext(),PlayingStart.class);
-        PendingIntent pi = PendingIntent.getActivity(myJobService.this,0,intent,0);
+       // Intent intent=new Intent(getBaseContext(),PlayingStart.class);
+       // PendingIntent pi = PendingIntent.getActivity(myJobService.this,0,intent,0);
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
             NotificationChannel channel= new NotificationChannel(CHANNEL_ID,"channel", NotificationManager.IMPORTANCE_DEFAULT);
             NotificationManager manager =getSystemService(NotificationManager.class);
@@ -41,10 +41,10 @@ stop=true;
         }
         NotificationCompat.Builder builder= new NotificationCompat.Builder(myJobService.this,CHANNEL_ID);
         builder.setSmallIcon(R.drawable.ic_launcher_foreground);
-        builder.setContentTitle("notification title");
-        builder.setContentText("notification text ");
+        builder.setContentTitle("Open your mind");
+        builder.setContentText("You haven't solved a puzzle in 24 hours ");
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
-        builder.addAction(R.drawable.ic_launcher_background,"action",pi);
+      //  builder.addAction(R.drawable.ic_launcher_background,"action",pi);
         NotificationManagerCompat managerCompat=NotificationManagerCompat.from(myJobService.this);
         managerCompat.notify(1,builder.build());
     }

@@ -27,7 +27,7 @@
         android:layout_marginEnd="28dp"
         android:background="@drawable/puzzleshape"
         android:gravity="center"
-        android:text="TextView"
+        android:text="0"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +40,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/puzzleshape"
         android:gravity="center"
-        android:text="TextView"
+        android:text="0"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/timer"
         app:layout_constraintTop_toTopOf="parent" />

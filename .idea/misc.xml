@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HASHEM/AndroidStudioProjects/finalprojectpuzzle2_Bayan_nasar/app/src/main/res/layout/fragment_tru_or_false.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/drawable-v24/et_h_number.xml" value="0.142" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/drawable-v24/et_login.xml" value="0.142" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/drawable-v24/ic_baseline_settings_24.xml" value="0.142" />
@@ -15,10 +16,12 @@
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_level.xml" value="0.2" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_playing_start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_profile_class.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_register_class.xml" value="0.25" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_settings.xml" value="0.2" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/fragment_choose.xml" value="0.2" />
+        <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/fragment_datepicker.xml" value="0.1" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/fragment_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/fragment_fill_in_the_blank.xml" value="0.2" />
         <entry key="..\:/Users/bianz/AndroidStudioProjects/finalprojectpuzzle/app/src/main/res/layout/fragment_tru_or_false.xml" value="0.2" />

@@ -12,7 +12,7 @@
     "answer_4": "",
     "true_answer": "false",
     "points": 3,
-    "duration": 1500,
+    "duration": 15000,
     "pattern": {
       "pattern_id": 1,
       "pattern_name": "True of False"
@@ -28,7 +28,7 @@
       "answer_4": "دبلن",
       "true_answer": "أديس أبابا",
       "points": 2,
-      "duration": 1000,
+      "duration": 10000,
       "pattern": {
         "pattern_id": 2,
         "pattern_name": "Choose the correct answer"
@@ -44,7 +44,7 @@
       "answer_4": "",
       "true_answer": "المريخ",
       "points": 1,
-      "duration": 1000,
+      "duration": 10000,
       "pattern": {
         "pattern_id": 3,
         "pattern_name": "Fill the answer"
@@ -60,7 +60,7 @@
       "answer_4": "12 كوكب",
       "true_answer": "8 كواكب",
       "points": 2,
-      "duration": 1000,
+      "duration": 10000,
       "pattern": {
         "pattern_id": 2,
         "pattern_name": "Choose the correct answer"
@@ -81,7 +81,7 @@
       "answer_4": "",
       "true_answer": "true",
       "points": 5,
-      "duration": 1000,
+      "duration": 10000,
       "pattern": {
         "pattern_id": 1,
         "pattern_name": "True of False"
@@ -97,7 +97,7 @@
         "answer_4": "كوالا",
         "true_answer": "شرغوف",
         "points": 4,
-        "duration": 1000,
+        "duration": 10000,
         "pattern": {
           "pattern_id": 2,
           "pattern_name": "Choose the correct answer"
@@ -113,7 +113,7 @@
         "answer_4": "",
         "true_answer": "التونة",
         "points": 1,
-        "duration": 1000,
+        "duration": 10000,
         "pattern": {
           "pattern_id": 3,
           "pattern_name": "Fill the answer"
@@ -121,4 +121,75 @@
         "hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
       }
     ]
-  }]
+  },
+  {
+    "level_no": 3,
+    "unlock_points": 12,
+    "questions": [
+      {
+        "id": 8,
+        "title": "من اولاد النبي صلى الله عليه وسلم القاسم",
+        "answer_1": "",
+        "answer_2": "",
+        "answer_3": "",
+        "answer_4": "",
+        "true_answer": "true",
+        "points": 3,
+        "duration": 15000,
+        "pattern": {
+          "pattern_id": 1,
+          "pattern_name": "True of False"
+        },
+        "hint": "القاسم من ابناء الرسول صلى الله عليه وسلم"
+      },
+      {
+        "id": 9,
+        "title": "توفي النبي صلى الله عليه وسلم وهو في عمر",
+        "answer_1": "63",
+        "answer_2": "44",
+        "answer_3": "55",
+        "answer_4": "65",
+        "true_answer": "63",
+        "points": 2,
+        "duration": 10000,
+        "pattern": {
+          "pattern_id": 2,
+          "pattern_name": "Choose the correct answer"
+        },
+        "hint": "توفي النبي صلى الله عليه وسلم وهو في عمر 63"
+      }
+    ,{
+        "id": 10,
+        "title": "من اول من امن بالرسول من الرجال",
+        "answer_1": "",
+        "answer_2": "",
+        "answer_3": "",
+        "answer_4": "",
+        "true_answer": "ابو بكر الصديق",
+        "points": 1,
+        "duration": 10000,
+        "pattern": {
+          "pattern_id": 3,
+          "pattern_name": "Fill the answer"
+        },
+        "hint": "اول من امن بالرسول من الرجال هو ابو بكر الصديق"
+      },
+      {
+        "id": 11,
+        "title": "اول من امن بالرسول من النساء",
+        "answer_1": "خديجة رضي الله عنها",
+        "answer_2": "عائشة رضي الله عنها",
+        "answer_3": "حليمة السعدية",
+        "answer_4": "ام سلمة رضي الله عنها",
+        "true_answer": "خديجة رضي الله عنها",
+        "points": 2,
+        "duration": 10000,
+        "pattern": {
+          "pattern_id": 2,
+          "pattern_name": "Choose the correct answer"
+        },
+        "hint": "اول من امن بالرسول من النساء هي خديجة رضي الله عنها"
+      }
+    ]
+  }
+]

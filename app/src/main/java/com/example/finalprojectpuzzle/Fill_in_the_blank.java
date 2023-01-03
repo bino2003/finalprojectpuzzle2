@@ -80,11 +80,13 @@ mediaPlayer.start();
         }else {
             Toast.makeText(getContext(), "Answered Wrong", Toast.LENGTH_SHORT).show();
 mediaPlayer1.start();
+onAnswerFillBlank.OnAnswerFillBlankWrong();
             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
             dialog.show(getParentFragmentManager(),"CustomDialog");
         }
     }
 });
+
 
 
 

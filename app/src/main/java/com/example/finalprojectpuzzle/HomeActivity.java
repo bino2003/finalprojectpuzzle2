@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import com.example.finalprojectpuzzle.databinding.ActivityHomeBinding;
 
@@ -15,6 +17,8 @@ ActivityHomeBinding binding;
         super.onCreate(savedInstanceState);
         binding=ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.btnStart.startAnimation(AnimationUtils.loadAnimation(getBaseContext(),R.anim.my_animation));
+
         binding.profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +38,7 @@ ActivityHomeBinding binding;
 binding.btnStart.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
+
         Intent intent=new Intent(HomeActivity.this,PlayingStart.class);
         startActivity(intent);
     }
@@ -41,8 +46,16 @@ binding.btnStart.setOnClickListener(new View.OnClickListener() {
 binding.logout.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
+        Intent intent=new Intent(HomeActivity.this,playerService.class);
+        stopService(intent);
         finishAffinity();
     }
 });
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Intent intent=new Intent(HomeActivity.this,playerService.class);
+        stopService(intent);
     }
 }

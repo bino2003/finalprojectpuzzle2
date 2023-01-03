@@ -113,6 +113,7 @@ public class Choose extends Fragment {
                             mediaPlayer1.start();
                             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
                             dialog.show(getParentFragmentManager(),"CustomDialog");
+                            onAnswerChoose.OnAnswerChooseWrong();
                         }
 
                         break;
@@ -127,6 +128,7 @@ public class Choose extends Fragment {
                         } else {
                             Toast.makeText(getContext(), "Answered Wrong", Toast.LENGTH_SHORT).show();
 mediaPlayer1.start();
+                            onAnswerChoose.OnAnswerChooseWrong();
                             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
                             dialog.show(getParentFragmentManager(),"CustomDialog");
                         }
@@ -139,6 +141,7 @@ mediaPlayer1.start();
                             dialog.show(getParentFragmentManager(),"CustomDialog");
                             mediaPlayer.start();
                         } else {
+                            onAnswerChoose.OnAnswerChooseWrong();
                             Toast.makeText(getContext(), "Answered Wrong", Toast.LENGTH_SHORT).show();
 mediaPlayer1.start();
                             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
@@ -154,6 +157,7 @@ mediaPlayer1.start();
                             dialog.show(getParentFragmentManager(),"CustomDialog");
 
                         } else {
+                            onAnswerChoose.OnAnswerChooseWrong();
                             Toast.makeText(getContext(), "Answered Wrong", Toast.LENGTH_SHORT).show();
 mediaPlayer1.start();
                             FragmentDialog dialog=FragmentDialog.newInstance(String.valueOf(R.drawable.wrong),HINT);
@@ -168,5 +172,4 @@ mediaPlayer1.start();
 
 
         return binding.getRoot();
-    }
-}
+    }}

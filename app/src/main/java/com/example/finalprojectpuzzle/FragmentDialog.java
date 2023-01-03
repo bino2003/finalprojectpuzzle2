@@ -18,7 +18,6 @@ public class FragmentDialog extends DialogFragment {
     private static final String ARG_ANSWER = "answer";
     private static final String ARG_HINT = "hint";
 
-    // TODO: Rename and change types of parameters
     private String ANSWER;
     private String HINT;
 
